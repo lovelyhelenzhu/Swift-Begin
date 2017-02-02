@@ -1,26 +1,64 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hello_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFe-6h-8iq">
+                                <rect key="frame" x="119" y="150" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Q8-84-ftU">
+                                <rect key="frame" x="126.5" y="221" width="67" height="30"/>
+                                <state key="normal" title="PUSH ME"/>
+                                <connections>
+                                    <action selector="Button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8us-Za-6JC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K1J-PK-U3b">
+                                <rect key="frame" x="102.5" y="301" width="115" height="30"/>
+                                <state key="normal" title="PUSH ME TOO!!!"/>
+                                <connections>
+                                    <action selector="Button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ox-Af-2X2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PFe-6h-8iq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7CN-Qp-GzZ"/>
+                            <constraint firstItem="K1J-PK-U3b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CEU-i3-oqr"/>
+                            <constraint firstItem="PFe-6h-8iq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="LPn-f3-Vvk"/>
+                            <constraint firstItem="3Q8-84-ftU" firstAttribute="top" secondItem="PFe-6h-8iq" secondAttribute="bottom" constant="50" id="S9L-j1-flW"/>
+                            <constraint firstItem="K1J-PK-U3b" firstAttribute="top" secondItem="3Q8-84-ftU" secondAttribute="bottom" constant="50" id="eXq-Oi-9bY"/>
+                            <constraint firstItem="3Q8-84-ftU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qAc-9N-Gw9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="namelala" destination="PFe-6h-8iq" id="Pca-Vi-dF2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="188" y="155"/>
         </scene>
     </scenes>
 </document>
