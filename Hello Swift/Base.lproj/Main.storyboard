@@ -41,19 +41,52 @@
                                     <action selector="Button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ox-Af-2X2"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yg1-J1-l1u">
+                                <rect key="frame" x="110.5" y="351" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="dBt-kl-jAe"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rao-gA-vjk">
+                                <rect key="frame" x="110.5" y="401" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8XU-gv-JiZ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzi-WA-QM1">
+                                <rect key="frame" x="138" y="451" width="45" height="30"/>
+                                <state key="normal" title="ADD!!!"/>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AHv-vs-GDf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Rao-gA-vjk" firstAttribute="top" secondItem="yg1-J1-l1u" secondAttribute="bottom" constant="20" id="2QA-df-GEb"/>
+                            <constraint firstItem="hzi-WA-QM1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2c1-Aq-MdU"/>
                             <constraint firstItem="PFe-6h-8iq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7CN-Qp-GzZ"/>
+                            <constraint firstItem="Rao-gA-vjk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CBj-x7-sFo"/>
                             <constraint firstItem="K1J-PK-U3b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CEU-i3-oqr"/>
                             <constraint firstItem="PFe-6h-8iq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="LPn-f3-Vvk"/>
+                            <constraint firstItem="yg1-J1-l1u" firstAttribute="top" secondItem="K1J-PK-U3b" secondAttribute="bottom" constant="20" id="Nna-0o-auS"/>
                             <constraint firstItem="3Q8-84-ftU" firstAttribute="top" secondItem="PFe-6h-8iq" secondAttribute="bottom" constant="50" id="S9L-j1-flW"/>
                             <constraint firstItem="K1J-PK-U3b" firstAttribute="top" secondItem="3Q8-84-ftU" secondAttribute="bottom" constant="50" id="eXq-Oi-9bY"/>
+                            <constraint firstItem="hzi-WA-QM1" firstAttribute="top" secondItem="Rao-gA-vjk" secondAttribute="bottom" constant="20" id="h8f-OJ-Jqq"/>
                             <constraint firstItem="3Q8-84-ftU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qAc-9N-Gw9"/>
+                            <constraint firstItem="yg1-J1-l1u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sV6-TI-5A1"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="namelala" destination="PFe-6h-8iq" id="Pca-Vi-dF2"/>
+                        <outlet property="text1" destination="yg1-J1-l1u" id="sV6-LN-g0J"/>
+                        <outlet property="text2" destination="Rao-gA-vjk" id="kBC-4r-NZi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

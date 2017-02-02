@@ -9,11 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var namelala: UILabel!
     
-
     
+    @IBOutlet weak var text1: UITextField!
+    
+    
+    @IBOutlet weak var text2: UITextField!
+    
+    @IBAction func add(_ sender: Any) {
+        
+        namelala.text = "\(text1.text!)+\(text2.text!)"
+        
+    }
     @IBAction func Button1(_ sender: Any) {
         namelala.text = "哼哼哼"
     }
@@ -30,12 +39,12 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.red
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
