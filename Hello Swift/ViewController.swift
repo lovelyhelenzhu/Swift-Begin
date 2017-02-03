@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     @IBAction func add(_ sender: Any) {
         
-        namelala.text = "\(text1.text!)+\(text2.text!)"
+        namelala.text = "\(Double(text1.text!)! + Double(text2.text!)!)"
         
     }
     @IBAction func Button1(_ sender: Any) {
